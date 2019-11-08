@@ -160,7 +160,7 @@
     <ClInclude Include="GradeCalculator1.h" />
     <ClInclude Include="GradeCalculator2.h" />
     <ClInclude Include="GradeCalculator3.h" />
-    <ClInclude Include="IIntegerReader.h" />
+    <ClInclude Include="IStreamIntegerReader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

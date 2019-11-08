@@ -38,7 +38,7 @@
     <ClInclude Include="GradeCalculator3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IIntegerReader.h">
+    <ClInclude Include="IStreamIntegerReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
