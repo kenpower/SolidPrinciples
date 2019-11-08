@@ -151,7 +151,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GradeCalculator1.cpp" />
+    <ClCompile Include="GradeCalculator2.cpp" />
+    <ClCompile Include="GradeCalculator3.cpp" />
     <ClCompile Include="SingleResponsibility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GradeCalculator1.h" />
+    <ClInclude Include="GradeCalculator2.h" />
+    <ClInclude Include="GradeCalculator3.h" />
+    <ClInclude Include="IIntegerReader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
