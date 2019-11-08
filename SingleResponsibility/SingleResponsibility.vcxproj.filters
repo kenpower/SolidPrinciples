@@ -27,6 +27,9 @@
     <ClCompile Include="GradeCalculator3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GradeIntegerReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GradeCalculator1.h">
@@ -38,7 +41,10 @@
     <ClInclude Include="GradeCalculator3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IStreamIntegerReader.h">
+    <ClInclude Include="GradeIntegerReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IIntegerReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

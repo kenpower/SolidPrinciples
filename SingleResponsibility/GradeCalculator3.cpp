@@ -1,30 +1,6 @@
 #include "GradeCalculator3.h"
 using namespace std;
 
-int GradeCalculator3::getScore() {
-
-	int score{ 0 };
-
-	std::cout << "Please enter your exam score\n";
-
-	do {
-		do {
-			cin >> score;
-			if (!cin.fail())
-				break;
-			cout << "Please enter an integer." << endl;
-			cin.clear();
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		} while (true);
-
-		if (score >= 0 && score <= 100)
-			break;
-		cout << "Please enter a value between 0 and 100." << endl;
-	} while (true);
-
-	return score;
-}
-
 string GradeCalculator3::scoreToString(int score) {
 	string gradeString;
 	
@@ -49,10 +25,11 @@ string GradeCalculator3::scoreToString(int score) {
  
 void GradeCalculator3::caclulateGrade()
 {
-	int score = getScore();
+	int score = integerReader.getInteger();
+
 	string gradeString = scoreToString(score);
 
-	cout << "Your grade is a "+ gradeString;
+	ostream << "Your grade is a "+ gradeString;
 }
 
 
