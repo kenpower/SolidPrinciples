@@ -1,8 +1,8 @@
-#include "GradeCalculator2.h"
+#include "GradeCalculator.h"
 using namespace std;
 
-int GradeCalculator2::getScore() {
-
+void GradeCalculator::caclulateGrade()
+{
 	int score{ 0 };
 
 	std::cout << "Please enter your exam score\n";
@@ -22,37 +22,24 @@ int GradeCalculator2::getScore() {
 		cout << "Please enter a value between 0 and 100." << endl;
 	} while (true);
 
-	return score;
-}
-
-string GradeCalculator2::scoreToString(int score) {
-	string gradeString;
-	
+	string message;
 	if (score < 40) {
-		gradeString = "Fail";
+		message = "Your grade is a Fail";
 	}
 	else if (score >= 40 && score < 50) {
-		gradeString = "Pass";
+		message = "Your grade is a Pass";
 	}
 	else if (score >= 50 && score < 60) {
-		gradeString = "II.2";
+		message = "Your grade is a II.2";
 	}
 	else if (score >= 60 && score < 70) {
-		gradeString = "II.1";
+		message = "Your grade is a II.1";
 	}
 	else {
-		gradeString = "First";
+		message = "Your grade is a First";
 	}
 
-	return gradeString;
-}
- 
-void GradeCalculator2::caclulateGrade()
-{
-	int score = getScore();
-	string gradeString = scoreToString(score);
-
-	cout << "Your grade is a "+ gradeString;
+	cout << message;
 }
 
 

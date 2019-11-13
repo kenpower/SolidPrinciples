@@ -15,27 +15,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SingleResponsibility.cpp">
+    <ClCompile Include="OpenClosed.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GradeIntegerReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GradeCalculatorSRP_1.cpp">
+    <ClCompile Include="GradeCalculatorOCP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GradeCalculatorSRP_2.cpp">
+    <ClCompile Include="GradeIntegerStdioReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGradeReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GradeIntegerReader.h">
+    <ClInclude Include="GradeCalculatorOCP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GradeCalculatorSRP_1.h">
+    <ClInclude Include="RandomGradeReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GradeCalculatorSRP_2.h">
+    <ClInclude Include="GradeReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdioGradeReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamGradeReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

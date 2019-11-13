@@ -1,6 +1,6 @@
 #pragma once
 
-class IIntegerReader {
+class GradeReader {
 public:
 	virtual int getInteger() = 0;
 };

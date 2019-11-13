@@ -15,27 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SingleResponsibility.cpp">
+    <ClCompile Include="NonSOLIDCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GradeIntegerReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GradeCalculatorSRP_1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GradeCalculatorSRP_2.cpp">
+    <ClCompile Include="GradeCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GradeIntegerReader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GradeCalculatorSRP_1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GradeCalculatorSRP_2.h">
+    <ClInclude Include="GradeCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

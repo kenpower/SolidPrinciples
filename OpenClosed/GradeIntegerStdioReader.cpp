@@ -1,8 +1,8 @@
-#include "GradeIntegerReader.h"
+#include "StdioGradeReader.h"
 
 using namespace std;
 
-int StreamGradeReader::getInteger() const 
+int StdioGradeReader::getInteger()
 {
 	int score{ 0 };
 

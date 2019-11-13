@@ -1,9 +1,11 @@
-#include "GradeCalculator3.h"
+#include "GradeCalculatorSRP_2.h"
 using namespace std;
 
-string GradeCalculator3::scoreToString(int score) {
+const StreamGradeReader GradeCalculatorSRP_2::gradeIntegerReader = StreamGradeReader();
+
+string GradeCalculatorSRP_2::scoreToString(int score) {
 	string gradeString;
-	
+
 	if (score < 40) {
 		gradeString = "Fail";
 	}
@@ -22,14 +24,14 @@ string GradeCalculator3::scoreToString(int score) {
 
 	return gradeString;
 }
- 
-void GradeCalculator3::caclulateGrade()
+
+void GradeCalculatorSRP_2::caclulateGrade()
 {
-	int score = integerReader.getInteger();
+	int score = gradeIntegerReader.getInteger();
 
 	string gradeString = scoreToString(score);
 
-	ostream << "Your grade is a "+ gradeString;
+	cout << "Your grade is a "+ gradeString << endl;
 }
 
 

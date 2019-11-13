@@ -2,9 +2,8 @@
 #include <iostream>
 #include <string>
 
-class GradeCalculator1
+class GradeCalculator
 {
-public: 
+public:
 	static void caclulateGrade();
 };
-

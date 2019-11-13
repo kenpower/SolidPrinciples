@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-class GradeCalculator2
+class GradeCalculatorSRP_1
 {
 public: 
 	static void caclulateGrade();
