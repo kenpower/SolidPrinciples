@@ -152,8 +152,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GradeCalculatorOCP.cpp" />
-    <ClCompile Include="GradeIntegerStdioReader.cpp" />
-    <ClCompile Include="GradeIntegerReader.cpp" />
+    <ClCompile Include="StdioGradeReader.cpp" />
+    <ClCompile Include="StreamGradeReaderReader.cpp" />
     <ClCompile Include="OpenClosed.cpp" />
     <ClCompile Include="RandomGradeReader.cpp" />
   </ItemGroup>

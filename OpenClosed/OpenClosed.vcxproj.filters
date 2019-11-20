@@ -18,16 +18,16 @@
     <ClCompile Include="OpenClosed.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GradeIntegerReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GradeCalculatorOCP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GradeIntegerStdioReader.cpp">
+    <ClCompile Include="RandomGradeReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RandomGradeReader.cpp">
+    <ClCompile Include="StdioGradeReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamGradeReaderReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
