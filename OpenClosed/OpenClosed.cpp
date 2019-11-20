@@ -19,8 +19,8 @@ int main()
 	GradeCalculatorOCP randomGradeCalculator(randomGradereader, std::cout);
 	randomGradeCalculator.caclulateGrade();
 
-	StreamGradeReader gradeReader(std::cin, std::cout);
-	GradeCalculatorOCP streamGradeCalculator(gradeReader, std::cout);
+	StreamGradeReader streamGradeReader(std::cin, std::cout);
+	GradeCalculatorOCP streamGradeCalculator(streamGradeReader, std::cout);
 	streamGradeCalculator.caclulateGrade();
 
 }

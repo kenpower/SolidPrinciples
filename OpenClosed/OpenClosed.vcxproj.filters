@@ -27,7 +27,7 @@
     <ClCompile Include="StdioGradeReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StreamGradeReaderReader.cpp">
+    <ClCompile Include="StreamGradeReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
