@@ -1,4 +1,5 @@
-#include "pch.h"
+#include "gtest/gtest.h"
+#include "gmock/gmock.h"  // Brings in Google Mock.
 #include <sstream>
 #include "..//OpenClosed/StreamGradeReader.h"
 
