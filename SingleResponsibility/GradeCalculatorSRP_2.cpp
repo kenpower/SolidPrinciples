@@ -33,11 +33,3 @@ void GradeCalculatorSRP_2::caclulateGrade()
 
 	cout << "Your grade is a "+ gradeString << endl;
 }
-
-
-//places to change
-//input source (cin)
-//output cout 
-//range of valid values
-//range of grades
-//language of mesage
