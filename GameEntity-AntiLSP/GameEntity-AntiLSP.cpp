@@ -8,35 +8,43 @@
 #include "CollisionManager.h"
 
 using namespace std;
+
 int main()
 {
-	
-	list<Entity> entities{ DangerousEntity(),  DelicateEntity(), DangerousEntity(), DelicateEntity() };
+	list<unique_ptr<AbstractEntity>> entities;
+	entities.push_front(unique_ptr<DangerousEntity>(new DangerousEntity()));
+	entities.push_front(unique_ptr<DelicateEntity>(new DelicateEntity()));
+
 	Player player;
 	CollisionManager collisionManager;
 
 	//update loop
-	for (auto entity : entities) {
+	for (auto&& entity : entities) {
 		if (collisionManager.collides(player, entity)) {
-			if (typeid(entity) == typeid(DelicateEntity)) {
-				DelicateEntity*  delicateEntityPtr = static_cast<DelicateEntity*>(&entity);
-				delicateEntityPtr->die();
+			if (typeid(*entity) == typeid(DelicateEntity)) {
+				//cast entity to DelicateEntity* in order to call non-polymorphic method die()
+				static_cast<DelicateEntity*>(entity.get())->die();
 			}
-			if (typeid(entity) == typeid(DangerousEntity)) {
-				player.takeDamage(1);
+			if (typeid(*entity) == typeid(DangerousEntity)) {
+				player.takeDamage(5);
 			}
 		}
 	}
 
 	//draw loop
-	for (auto entity : entities) {
+	for (auto&& entity : entities) {
 		if (collisionManager.collides(player, entity)) {
-			string entityStatus = entity.getStatus();
+			string entityStatus = entity->getStatus();
 			if (entityStatus != "dead" && entityStatus != "Health: 0") {
-				entity.Draw();
+				entity->Draw();
 			}
 		}
 	}
+
+	for (auto&& entity : entities) {
+		cout << entity->toString() << endl;
+	}
+	cout << player.toString() << endl;
 
 }
 
