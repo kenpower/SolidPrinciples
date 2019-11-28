@@ -59,7 +59,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>..\OpenClosed\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>StdioGradeReader.obj;StreamGradeReader.obj;RandomGradeReader.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>StdioGradeReader.obj;StreamGradeReader.obj;RandomGradeReader.obj;GradeCalculatorOCP.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
